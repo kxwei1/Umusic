@@ -1,0 +1,167 @@
+.home {
+    font-size: 20px;
+}
+
+.m-tabarea .m-tabct,
+.m-tabarea .m-tabct .tabctitem {
+    width: 100%;
+    height: 100%;
+}
+
+.m-tabarea .m-tabct {
+    display: block;
+}
+
+.m-tabarea .m-tabct .tabctitem {
+    width: 100%;
+    height: 100%;
+}
+
+.m-homeremd {
+    padding-top: 20px;
+}
+
+.m-homeremd .remd_tl {
+    position: relative;
+    padding-left: 9px;
+    margin-bottom: 14px;
+    font-size: 17px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.m-homeremd .remd_tl:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+    width: 2px;
+    height: 16px;
+    background-color: #d33a31;
+}
+
+.m-homeremd .remd_songs {
+    position: relative;
+    padding-bottom: 24px;
+}
+
+.m-homeremd .remd_ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.m-homeremd .remd_li:first-child {
+    padding-left: 0;
+    padding-right: 2px;
+}
+
+.m-homeremd .remd_li {
+    display: block;
+    margin-bottom: 16px;
+    float: left;
+    width: 33.3%;
+    padding-left: 1px;
+    padding-right: 1px;
+    box-sizing: border-box;
+}
+
+.m-homeremd .remd_li {
+    flex: none;
+}
+
+a,
+a:visited {
+    color: #333;
+}
+
+.m-homeremd .remd_img {
+    position: relative;
+    padding-bottom: 100%;
+}
+
+.m-homeremd .remd_img>.u-img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.u-img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+abbr,
+body,
+fieldset,
+html,
+iframe,
+img {
+    border: 0;
+}
+
+.m-homeremd .remd_text {
+    overflow: hidden;
+    padding: 6px 2px 0 6px;
+    min-height: 30px;
+    line-height: 1.2;
+    font-size: 13px;
+}
+
+
+.m-homeft {
+    position: relative;
+    padding-top: 53.3%;
+    margin-top: 4px;
+    background: url(//s3.music.126.net/mobile-new/img/recommand_bg_2x.png?d045faf…=) no-repeat;
+    background-size: contain;
+}
+
+.footer {
+    display: block;
+}
+
+.m-homeft .ftwrap {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1;
+    text-align: center;
+}
+
+.m-homeft .logo {
+    padding-top: 16.9%;
+}
+
+.m-homeft .logosvg {
+    display: block;
+    margin: 0 auto;
+    width: 230px;
+    height: 44px;
+}
+
+.m-homeft .openapp {
+    line-height: 38px;
+    border: 1px solid #d33a31;
+    border-radius: 38px;
+    font-size: 16px;
+    color: #d33a31;
+    margin: 15px 37px 5px;
+}
+
+
+.m-homeft .copyright {
+    color: #888;
+    font-size: 12px;
+    line-height: 16px;
+    transform: scale(.75);
+}
+
+
+.m-homeft .ftwrap .logo img{
+    width: 3.5rem;
+}

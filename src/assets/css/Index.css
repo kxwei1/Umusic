@@ -1,0 +1,72 @@
+.index .title {
+    width: 100%;
+    height: 1.68rem;
+    background-color: #d43c33;
+}
+
+.index .title .tName {
+    font-size: 25px;
+    color: #fff;
+    line-height: 1.68rem;
+    margin-left: 25px;
+}
+
+.index .tabNav {
+    height: 0.8rem;
+    border: 1px solid #eee;
+    font-size: 17px;
+    color: #333;
+    display: flex;
+    width: 100%;
+    line-height: 0.8rem;
+}
+
+.index .tabNav a {
+    flex: 1;
+    color: #333;
+    text-align: center;
+}
+
+
+
+.topfr {
+    border: 1px;
+    position: absolute;
+    right: 0.3rem;
+    top: 0.5rem;
+}
+
+.topbton {
+    position: relative;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    font-size: 16px;
+    width: 100px;
+    color: red;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 37.5%/100%;
+}
+
+.f-bd {
+    position: relative;
+}
+
+.topbton:after {
+    border-color: #fff;
+    border-radius: 37.5%/100%;
+}
+
+.logo_min {
+    width: 1rem;
+    position: relative;
+    top: 0.3rem;
+    left: 0.2rem;
+}
+
+
+.select {
+    color: red !important;
+    border-bottom: 2px solid red;
+}
