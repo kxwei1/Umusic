@@ -62,7 +62,7 @@
 .m-input .close {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 7px;
     width: 30px;
     height: 30px;
     line-height: 28px;
@@ -72,6 +72,7 @@
 .m-input .u-svg-empty {
     display: none;
     vertical-align: middle;
+    padding: 0 0.1rem;
 }
 
 .u-svg-empty {
@@ -122,4 +123,76 @@ a:visited {
 .m-hotlist .item:after {
     border: 1px solid #d3d4da;
     border-radius: 32px;
+}
+
+.m-recom .recomitem {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 45px;
+    padding-left: 10px;
+}
+
+.m-recom i {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    margin-right: 7px;
+}
+
+.u-svg-search {
+    width: 15px;
+    height: 15px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAzMCI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBmaWxsPSIjMDQwMDAwIiBkPSJNMjguMTgxIDI3LjUzNWwtMS40MTQgMS40MTQtNy43NTUtNy43NTRBMTEuNDQ1IDExLjQ0NSAwIDAgMSAxMS41IDI0QzUuMTQ5IDI0IDAgMTguODUyIDAgMTIuNSAwIDYuMTQ5IDUuMTQ5IDEgMTEuNSAxIDE3Ljg1MiAxIDIzIDYuMTQ5IDIzIDEyLjVjMCAyLjc1Ni0uOTczIDUuMjg1LTIuNTg5IDcuMjY2bDcuNzcgNy43Njl6TTExLjUgM2E5LjUgOS41IDAgMSAwIDAgMTkgOS41IDkuNSAwIDAgMCAwLTE5eiIgb3BhY2l0eT0iLjMiLz48L3N2Zz4=);
+}
+
+.u-svg {
+    display: inline-block;
+    vertical-align: middle;
+    background-position: 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.u-svg {
+    display: inline-block;
+    vertical-align: middle;
+    background-position: 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.m-recom span {
+    display: inline-block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 1%;
+    padding-right: 10px;
+    font-size: 15px;
+    line-height: 45px;
+    color: #333;
+}
+
+.f-bd {
+    position: relative;
+}
+
+.f-thide {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: normal;
+
+}
+
+#sthide {
+    line-height: 0.8rem
 }
