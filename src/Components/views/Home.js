@@ -14,62 +14,12 @@ export default class Home extends Component {
         this.state = {
             bannerList: [],
             songSheets: [
-                // {
-                //     id: 1,
-                //     img: 'http://p2.music.126.net/NUoBu3y4srByMPoCeBWh3g==/109951165178088042.jpg?imageView=1&amp;type=webp&amp;thumbnail=246x0',
-                //     herf: '//y.music.163.com/m/playlist?id=5126542986',
-                //     heat: '124.9',
-                //     title: '2020上半年最受欢迎日语新歌'
-                // },
-                // {
-                //     id: 2,
-                //     img: "http://p2.music.126.net/uRKi7uzwfXCQmoS21u5VJA==/109951165145224508.jpg?imageView=1&amp;type=webp&amp;thumbnail=246x0",
-                //     herf: "//y.music.163.com/m/playlist?id=5126389016",
-                //     heat: '55.9',
-                //     title: '盛夏白瓷梅子汤，碎冰碰壁铛啷响'
-                // },
-                // {
-                //     id: 3,
-                //     img: "http://p2.music.126.net/PrdnMhohYoKbeh1Ue79LAg==/109951164297851087.jpg?imageView=1&amp;type=webp&amp;thumbnail=246x0",
-                //     href: "//y.music.163.com/m/playlist?id=2194601729",
-                //     heat: '852.8',
-                //     title: '『练球必备』超燃英文BGM'
-                // },
-                // {
-                //     id: 4,
-                //     img: "http://p2.music.126.net/ABGShD3CbGSUpyp49pzE6g==/109951164762093476.jpg?imageView=1&amp;type=webp&amp;thumbnail=246x0",
-                //     href: "//y.music.163.com/m/playlist?id=3136952023",
-                //     heat: '17.7',
-                //     title: '今天从《雅俗共赏》听起|私人雷达'
-                // },
-                // {
-                //     id: 5,
-                //     img: "http://p2.music.126.net/u5w-1-f8kbSX0ZgewCmiGA==/109951165134080652.jpg?imageView=1&amp;type=webp&amp;thumbnail=246x0",
-                //     href: "//y.music.163.com/m/playlist?id=2816437068",
-                //     heat: '2556.1',
-                //     title: '打游戏必备【战歌、节奏电音、重金属】'
-                // },
-                // {
-                //     id: 6,
-                //     img: "http://p2.music.126.net/rhGZZ-rNKgyh_bwf-zvYaw==/109951163659800127.jpg?imageView=1&amp;type=webp&amp;thumbnail=246x0",
-                //     href: "//y.music.163.com/m/playlist?id=385793698",
-                //     heat: '405.9',
-                //     title: '赵雷最好听的二十五首歌'
-                // },
             ],
             songList: [
             ],
         }
     }
     componentDidMount() {
-        // Axios.all(
-        //     [getPersonalized(),
-        //     newsong(),
-        //     getBanner(),
-        //     ]
-        // ).then(Axios.spread((songSheets, bannerList, songList) => {
-
-        // }))
         this.getPersonalized()
         this.newsong()
         this.getBanner()
@@ -115,7 +65,14 @@ export default class Home extends Component {
                 }
             })
     }
-
+    goDetail(id) {
+        this.props.history.push({
+            pathname: '/detail',
+            state: {
+                id
+            }
+        })
+    }
     render() {
         const { songSheets, songList, bannerList } = this.state
         return (
@@ -140,7 +97,7 @@ export default class Home extends Component {
                                 <div className="remd_ul">
                                     {
                                         songSheets.map(item => {
-                                            return <a key={item.id} className="remd_li">
+                                            return <a key={item.id} onClick={this.goDetail.bind(this, item.id)} className="remd_li">
                                                 <div className="remd_img">
                                                     <img className="u-img" src={item.picUrl} />
                                                     <span className="u-earp remd_lnum">{item.playCount}万</span>

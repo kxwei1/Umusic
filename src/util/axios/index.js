@@ -38,3 +38,31 @@ export function suggestedSearch(params) {
         params
     })
 }
+
+
+export function getPlayList(params) {
+    return http.get('/playlist/detail', {
+        params
+    })
+}
+export function getPlayComment(params) {
+    return http.get('/comment/playlist', {
+        params
+    })
+}
+
+export function getLyric(params) {
+    return http.get('/lyric', {
+        params
+    })
+}
+export function getUrl(params) {
+    return http.get('/song/url', {
+        params
+    })
+}
+export function getSongDetail(params) {
+    return http.get('/song/detail', {
+        params
+    })
+}

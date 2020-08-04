@@ -38,6 +38,14 @@ export default class Rank extends Component {
             }
         })
     }
+    goPlay(id) {
+        this.props.history.push({
+            pathname: '/play',
+            state: {
+                id
+            }
+        })
+    }
     render() {
         const { bgImg, rankList } = this.state
         return (
@@ -56,7 +64,7 @@ export default class Rank extends Component {
                                 <div className="m-sglst">
                                     {
                                         rankList.map((item, i) => {
-                                            return <a key={item.id} className="m-sgitem" href={item.href}>
+                                            return <a key={item.id} className="m-sgitem" onClick={this.goPlay.bind(this, item.id)}>
                                                 <div className="sgfl rankcss">{i < 10 ? '0' + i : i}</div>
                                                 <div className="sgfr f-bd f-bd-btm">
                                                     <div className="sgchfl">
